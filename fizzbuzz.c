@@ -5,16 +5,9 @@ int main(void)
 	int i;
 	for (int i = 0; i <=100; ++i)
 	{
-		if(!(i%15))
-			printf("FizzBuzz");
-		else if (!(i%5))
-			printf("Buzz");
-		else if (!(i%3))
-			printf("Fizz");
-		else
-			printf("%d",i);
-
-		printf("\n");
+		i % 15 == 0 ? printf("Fizzbuzz\n");
+		i % 5 == 0 ? printf("Fizz\n");
+		i % 3 == 0 ? printf("Buzz\n");
 	}
 	return 0;
 }
